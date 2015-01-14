@@ -1,13 +1,18 @@
 Rails.application.routes.draw do
-  get 'games/index'
-
-  get 'games/show'
-
-  devise_for :users
-  
+  root to: 'application#index'
   get 'terms', to: 'application#terms'
   get 'impressum', to: 'application#impressum'
   get 'privacy', to: 'application#privacy'
   get 'contact', to: 'application#contact'
-  root to: 'application#index'
+  
+  devise_for :users, path: "", path_names: { 
+    sign_in: 'login', 
+    sign_out: 'logout', 
+    password: 'secret', 
+    confirmation: 'verification', 
+    unlock: 'unblock', 
+    registration: 'register', 
+    sign_up: '' }
+  
+  resources :games
 end
