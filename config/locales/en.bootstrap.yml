@@ -9,6 +9,13 @@ en:
       impressum: "Impressum"
       privacy: "Privacy Policy"
       contact: "Contact"
+    users:
+      sessions:
+        root: "Home"
+        login: "Login"
+      registrations:
+        root: "Home"
+        register: "Register"
     pages:
       pages: "Pages"
   helpers:

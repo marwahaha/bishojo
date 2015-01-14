@@ -5,7 +5,12 @@ Rails.application.routes.draw do
   get 'privacy', to: 'application#privacy'
   get 'contact', to: 'application#contact'
   
-  devise_for :users, path: "", path_names: { 
+  devise_for :users, path: "", controllers: {
+    sessions: 'users/sessions',
+    registrations: 'users/registrations',
+    passwords: 'users/passwords',
+    confirmations: 'users/confirmations'
+  }, path_names: { 
     sign_in: 'login', 
     sign_out: 'logout', 
     password: 'secret', 
