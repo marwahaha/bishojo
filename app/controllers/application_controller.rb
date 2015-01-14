@@ -23,4 +23,8 @@ class ApplicationController < ActionController::Base
   def contact
     add_breadcrumb :contact
   end
+  
+  def send_contact
+    add_breadcrumb :send_contact
+  end
 end

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'impressum', to: 'application#impressum'
   get 'privacy', to: 'application#privacy'
   get 'contact', to: 'application#contact'
+  post 'contact', to: 'application#send_contact', as: 'send_contact'
   
   devise_for :users, path: "", controllers: {
     sessions: 'users/sessions',
