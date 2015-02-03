@@ -41,11 +41,18 @@
     <%= nav_bar :fixed => :top, :brand => 'Bishojo', :responsive => true, :inverse => true do %>
       <%= menu_group do %>
         <%= menu_item "Home", root_path %>
+        <%= menu_item "Games", games_path %>
       <% end %>
       
       <%= menu_group :pull => :right do %>
         <%= menu_text "We make shiny things" %>
         <% if user_signed_in? %>
+          <%= drop_down current_user.name do %>
+            <%= menu_item "Games", user_games_path(current_user) %>
+            <%= drop_down_divider %>
+            <%= menu_item "Edit Account", account_path %>
+            <%= menu_item "Edit Account Settings", account_settings_path %>
+        <% end %>
           <%= menu_item "Logout", destroy_user_session_path %>
         <% else %>
           <%= menu_item "Login", new_user_session_path %>

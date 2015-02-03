@@ -25,6 +25,8 @@ class ApplicationController < ActionController::Base
   end
   
   def send_contact
-    add_breadcrumb :send_contact
+    sender = {name: params[:name], email: params[:email], message: params[:message]}
+    ContactMailer.contact_mail(sender).deliver
+    redirect_to :back, :notice => "Mail Sent. We will read your mail as soon as possible!"
   end
 end

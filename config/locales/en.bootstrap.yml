@@ -10,12 +10,15 @@ en:
       privacy: "Privacy Policy"
       contact: "Contact"
     users:
+      root: "Home"
       sessions:
         root: "Home"
         login: "Login"
       registrations:
         root: "Home"
         register: "Register"
+      account: "Account"
+      profile: "Profile"
     pages:
       pages: "Pages"
   helpers:

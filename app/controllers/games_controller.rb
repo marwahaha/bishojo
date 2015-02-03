@@ -1,8 +1,14 @@
 class GamesController < ApplicationController
   
   before_action :set_game, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:index, :show, :edit, :update, :destroy]
   
   def index
+    if @user
+      @games = @user.games
+    else
+      @games = Game.all
+    end
   end
   
   def new
@@ -40,6 +46,12 @@ class GamesController < ApplicationController
   private
     def set_game
       @game = Game.find params[:id]
+    end
+    
+    def set_user
+      if params[:user_id]
+        @user = User.find params[:user_id]
+      end
     end
 
     def game_params
