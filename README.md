@@ -22,3 +22,13 @@ Platform for Bishojo Games...
 * The whole game library is the store - users can purchase games for real money
 * users can create organizations with business plan and collaborated work on games
 * web application for building games supports real time
+
+# Dev Goals
+* Heroku
+* Database Server or Service
+* S3 Bucket
+* Facebook / Twitter Auth
+* Payment
+* Travis CI
+* Game Engine
+* All important Tests for nearly everything
