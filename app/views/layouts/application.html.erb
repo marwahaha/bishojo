@@ -48,6 +48,8 @@
         <%= menu_text "We make shiny things" %>
         <% if user_signed_in? %>
           <%= drop_down current_user.name do %>
+            <%= menu_item "Profile", user_path(current_user) %>
+            <%= drop_down_divider %>
             <%= menu_item "Games", user_games_path(current_user) %>
             <%= drop_down_divider %>
             <%= menu_item "Edit Account", account_path %>

@@ -5,7 +5,13 @@ Rails.application.routes.draw do
   get 'privacy', to: 'application#privacy'
   get 'contact', to: 'application#contact'
   post 'contact', to: 'application#send_contact', as: 'send_contact'
-  devise_for :users, path: "", path_names: { 
+
+  devise_for :users, path: "", controllers: {
+    sessions: 'users/sessions',
+    registrations: 'users/registrations',
+    passwords: 'users/passwords',
+    confirmations: 'users/confirmations'
+  }, path_names: { 
     sign_in: 'login', 
     sign_out: 'logout', 
     password: 'secret', 
@@ -14,20 +20,6 @@ Rails.application.routes.draw do
     registration: 'register', 
     sign_up: '' 
   }
-  # devise_for :users, path: "", controllers: {
-  #   #sessions: 'users/sessions',
-  #   #registrations: 'users/registrations',
-  #   #passwords: 'users/passwords',
-  #   #confirmations: 'users/confirmations'
-  # }, path_names: { 
-  #   sign_in: 'login', 
-  #   sign_out: 'logout', 
-  #   password: 'secret', 
-  #   confirmation: 'verification', 
-  #   unlock: 'unblock', 
-  #   registration: 'register', 
-  #   sign_up: '' 
-  # }
   
   get '/logout', to: 'users/sessions#destroy '
   
