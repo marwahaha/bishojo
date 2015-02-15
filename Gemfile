@@ -33,8 +33,8 @@ group :assets do
 end
 
 group :production do
-    gem 'pg', '0.18.1'
-    gem 'unicorn', '4.8.3'
+    #gem 'pg', '0.18.1'
+    #gem 'unicorn', '4.8.3'
 end
 
 group :development do
