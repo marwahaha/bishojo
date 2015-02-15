@@ -1,0 +1,21 @@
+// METRO
+//= require ../metroui/min/metro-bootstrap.min
+//= require ../metroui/min/metro-bootstrap-responsive.min
+//= require ../metroui/min/iconFont.min
+
+//= require_self
+
+body {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main-content {
+    min-height: 2000px;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}

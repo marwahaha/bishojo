@@ -21,3 +21,17 @@
 
 en:
   hello: "Hello world"
+  
+  bishojo: "Bishojo"
+  bishojo_title: "Bishojo Games - develop and/or play them"
+  
+  terms: "Terms"
+  privacy: "Privacy"
+  impressum: "Impressum"
+  contact: "Contact"
+  sign_in: "Sign In"
+  sign_up: "Sign Up"
+  sign_out: "Sign Out"
+  reload_page: "Reload the page"
+  search: "Search"
+  

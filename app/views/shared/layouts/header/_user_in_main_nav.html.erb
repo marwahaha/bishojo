@@ -1,0 +1,17 @@
+<% if(user_signed_in?) %>
+
+<% else %>
+
+    <%= link_to new_user_registration_path, {:class => 'element place-right'} do %>
+        <span class="icon-user-3"></span>
+        <%= t('sign_up') %>
+    <% end %>
+    
+    <span class="element-divider place-right"></span>
+    
+    <%= link_to new_user_session_path, {:class => 'element place-right'} do %>
+        <span class="icon-key"></span>
+        <%= t('sign_in') %>
+    <% end %>
+    
+<% end %>
