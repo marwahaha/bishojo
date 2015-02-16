@@ -1,6 +1,12 @@
 Bishojo Platform
 =====
 
+[![Build Status](https://travis-ci.org/Ninevillage/bishojo.svg?branch=master)](https://travis-ci.org/Ninevillage/bishojo)
+[![Dependency Status](https://gemnasium.com/Ninevillage/bishojo.svg)](https://gemnasium.com/Ninevillage/bishojo)
+
+[![Code Climate](https://codeclimate.com/github/Ninevillage/bishojo/badges/gpa.svg)](https://codeclimate.com/github/Ninevillage/bishojo)
+[![Test Coverage](https://codeclimate.com/github/Ninevillage/bishojo/badges/coverage.svg)](https://codeclimate.com/github/Ninevillage/bishojo)
+
 Platform for Bishojo Games...
 
 # Goals
