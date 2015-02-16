@@ -60,6 +60,8 @@ group :development, :test do
     gem 'database_cleaner', '1.4.0'
 end
 
+gem "codeclimate-test-reporter", group: :test, require: nil
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

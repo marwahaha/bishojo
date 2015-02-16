@@ -1,2 +1,4 @@
 language: ruby
 bundler_args: --without production
+env:
+- CODECLIMATE_REPO_TOKEN=9528f0a61eb734debb405061d15790d79770bcdf129a93e1603aecbba167d54b
