@@ -24,7 +24,7 @@ Platform for Bishojo Games...
   * write the game workflow (pathes)
   * write the game text
 * Save user data of played games
-* Show statistics abotu gamer
+* Show statistics about gamer
 * The whole game library is the store - users can purchase games for real money
 * users can create organizations with business plan and collaborated work on games
 * web application for building games supports real time
